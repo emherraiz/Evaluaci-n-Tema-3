@@ -1,4 +1,4 @@
-from Ejercicio_3.Nave import Nave
+from Nave import Nave
 
 class Naves():
 
@@ -36,7 +36,7 @@ class Naves():
                 x = nave.get_tripulacion()
                 nave_necesitada = nave
 
-        return nave
+        return nave_necesitada
 
     def naves_que_comienzan_con_AT(self):
         lista = list()
@@ -67,6 +67,19 @@ class Naves():
                 nave_mas_pequeña = nave
 
         return nave_mas_pequeña
+
+
+nave1 = Nave('Halcón Milenario', 20, 32, 6)
+nave2 = Nave('Estrella de la Muerte', 20, 33, 1)
+nave3 = Nave('ATomar por culo', 25, 35, 8)
+nave4 = Nave('atwedm', 6, 45, 23)
+nave5 = Nave('Estacion espacial internacional', 23, 8, 12)
+nave6 = Nave('Murcia', 87, 4, 3)
+nave7 = Nave('aTfm', 9, 5, 4)
+
+naves = Naves([nave1, nave2, nave3, nave4, nave5, nave6, nave7])
+
+print(naves.nave_con_menos_tripulacion())
 
 
 
